@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+pre {
+  font-family: 'Source Code Pro', monospace;
+  display: block;
+  font-size: 1em; }
+
+.tag {
+  font-style: italic;
+  color: #2e557c; }
+
+h1 a {
+  color: #343a40; }
+
+h2 a {
+  color: #343a40; }
+
+h3 a {
+  color: #343a40; }
+
+a:hover, a:active {
+  color: #4183C4;
+  text-decoration: none; }
+
+.entry-content p {
+  font-size: 18px;
+  line-height: 27px; }
+
+div.prompt.input_prompt {
+  display: none; }
+
+div.prompt.output_prompt {
+  display: none; }
