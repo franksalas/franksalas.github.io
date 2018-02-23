@@ -4,6 +4,3 @@
 [submodule "themes/salasdev"]
 	path = themes/salasdev
 	url = git://github.com/franksalas/salasdev.git
-[submodule "plugins/render_math"]
-	path = plugins/render_math
-	url = git://github.com/danielfrg/pelican-ipynb.git
