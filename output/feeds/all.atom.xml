@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>salas</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2016-01-16T18:46:00+00:00</updated><entry><title>sup globe</title><link href="/sup-globe/" rel="alternate"></link><published>2016-01-16T18:46:00+00:00</published><updated>2016-01-16T18:46:00+00:00</updated><author><name>Francisco Salas</name></author><id>tag:None,2016-01-16:/sup-globe/</id><summary type="html">&lt;!-- No title  --&gt;
+
+&lt;p&gt;&lt;img class="rounded mx-auto d-block" src="/images/sup-globe/doggo.jpg" title="image desc" alt="image desc"&gt;&lt;/p&gt;</summary><content type="html">&lt;!-- No title  --&gt;
+
+&lt;p&gt;&lt;img class="rounded mx-auto d-block" src="/images/sup-globe/doggo.jpg" title="image desc" alt="image desc"&gt;&lt;/p&gt;</content></entry></feed>

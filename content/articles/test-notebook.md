@@ -1,6 +1,6 @@
 Title: test notebook
 Date: 2018-2-22 18:50
-Tags:
+Tags: notebook
 Slug: test-notebook
 Status: draft
 

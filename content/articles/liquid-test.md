@@ -1,6 +1,6 @@
 Title: liquid test
 Date: 2017-4-12 18:56
-Tags:
+Tags: liquid, youtube
 Slug: liquid-test
 Status: draft
 
