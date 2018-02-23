@@ -6,9 +6,12 @@ AUTHOR = 'Francisco Salas'
 SITENAME = 'salas'
 SITEURL = ''
 
-PATH = 'content'
+#PATH = 'content'
+ARTICLE_DIRS = ['articles']
+
 STATIC_PATHS = ['images']
-TIMEZONE = 'Europe/Paris'
+
+TIMEZONE = 'UTC'
 
 DEFAULT_LANG = 'en'
 
@@ -30,7 +33,7 @@ SOCIAL = (
           ('linkedin', 'https://www.linkedin.com/in/frank-salas/'),
           ('github', 'http://github.com/franksalas'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -52,7 +55,41 @@ SHOW_TAGS = False
 
 
 #### Plugins ####
-MARKUP = ('md', 'ipynb')
+#MARKUP = ('md', 'ipynb')
+MARKUP = ('md',)
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
+
+
+
+
 
 PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['ipynb.markup','render_math']
+#PLUGINS = ['render_math','ipynb.markup','ipynb.liquid','liquid_tags.img']
+
+PLUGINS = ['render_math',
+            'ipynb.markup',
+            'ipynb.liquid',
+            'liquid_tags.img',
+            'liquid_tags.giphy',
+            'liquid_tags.graphviz',
+            'liquid_tags.youtube']
+
+
+
+
+# IPYNB_IGNORE_CSS=True
+
+
+
+MATH_JAX = {'color':'black','align':'center'}
+
+
+GIPHY_API_KEY = 'HA14SwsBeXdWSivIrB0pfEDNUjbaXcFM'
