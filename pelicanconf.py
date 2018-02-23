@@ -11,6 +11,9 @@ ARTICLE_DIRS = ['articles']
 
 STATIC_PATHS = ['images']
 
+
+
+
 TIMEZONE = 'UTC'
 
 DEFAULT_LANG = 'en'
