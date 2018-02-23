@@ -23,7 +23,7 @@ def make_entry(title):
     today = datetime.today()
     slug = title.lower().strip().replace(' ', '-')
     os.makedirs("content/notebooks/{}".format(slug))
-    f_create = "content/{}.md".format(slug)
+    f_create = "content/articles/{}.md".format(slug)
     t = TEMPLATE.strip().format(title=title,
                                 year=today.year,
                                 month=today.month,

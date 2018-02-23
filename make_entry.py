@@ -12,7 +12,8 @@ Status: published
   <!-- No title  -->
 
 
-![conda]({{filename}}/images/{slug}/)
+
+{{% img rounded mx-auto d-block /images/{slug}/ image desc %}}
 
 """
 
