@@ -44621,7 +44621,7 @@ KyZxMjExMTExMXGtmMTJxMTExMTExLViEicTExMTExMT14r/G8vekDWLJ0tYAAAAAElFTkSuQmCC
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;a href="https://giphy.com/gifs/veronica-mars-aMSJFS6oFX0fC"&gt;&lt;img src="https://media0.giphy.com/media/aMSJFS6oFX0fC/giphy.gif" alt="ive had some free time"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://giphy.com/gifs/veronica-mars-aMSJFS6oFX0fC"&gt;&lt;img src="https://media2.giphy.com/media/aMSJFS6oFX0fC/giphy.gif" alt="ive had some free time"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;graphviz&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;graphviz&lt;/span&gt;
     &lt;span class="n"&gt;dot&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -44659,7 +44659,7 @@ KyZxMjExMTExMXGtmMTJxMTExMTExLViEicTExMTExMT14r/G8vekDWLJ0tYAAAAAElFTkSuQmCC
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;a href="https://giphy.com/gifs/veronica-mars-aMSJFS6oFX0fC"&gt;&lt;img src="https://media0.giphy.com/media/aMSJFS6oFX0fC/giphy.gif" alt="ive had some free time"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://giphy.com/gifs/veronica-mars-aMSJFS6oFX0fC"&gt;&lt;img src="https://media2.giphy.com/media/aMSJFS6oFX0fC/giphy.gif" alt="ive had some free time"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;graphviz&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="n"&gt;graphviz&lt;/span&gt;
     &lt;span class="n"&gt;dot&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -44684,7 +44684,7 @@ KyZxMjExMTExMXGtmMTJxMTExMTExLViEicTExMTExMT14r/G8vekDWLJ0tYAAAAAElFTkSuQmCC
                     frameborder='0' webkitAllowFullScreen mozallowfullscreen
                     allowFullScreen&gt;
                 &lt;/iframe&gt;
-            &lt;/span&gt;&lt;/p&gt;</content><category term="liquid"></category><category term="youtube"></category></entry><entry><title>sup globe</title><link href="/sup-globe/" rel="alternate"></link><published>2016-01-16T18:46:00+00:00</published><updated>2016-01-16T18:46:00+00:00</updated><author><name>Francisco Salas</name></author><id>tag:None,2016-01-16:/sup-globe/</id><summary type="html">&lt;!-- No title  --&gt;
+            &lt;/span&gt;&lt;/p&gt;</content><category term="liquid"></category><category term="youtube"></category><category term="notebook"></category></entry><entry><title>sup globe</title><link href="/sup-globe/" rel="alternate"></link><published>2016-01-16T18:46:00+00:00</published><updated>2016-01-16T18:46:00+00:00</updated><author><name>Francisco Salas</name></author><id>tag:None,2016-01-16:/sup-globe/</id><summary type="html">&lt;!-- No title  --&gt;
 
 &lt;p&gt;&lt;img class="rounded mx-auto d-block" src="/images/sup-globe/doggo.jpg" title="image desc" alt="image desc"&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;make_entry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
