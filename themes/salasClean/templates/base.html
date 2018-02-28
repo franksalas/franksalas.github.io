@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> this is a title</title>
+{% include "css.html" %}
+  </head>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">{{SITENAME}}</a></h1>
+          </div>
+          {% include "nav.html"%}
+        </header>
+      </div>
+    </div>
+    <div id="main" role="main" class="container">
+        {% block content %}{% endblock %}
+    </div>
+<!-- scripts -->
+{%include "scripts.html"%}
+  </body>
+</html>

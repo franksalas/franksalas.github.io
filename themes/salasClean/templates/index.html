@@ -1,0 +1,22 @@
+<!-- the index (list all the articles) -->
+
+
+{% extends "base.html" %}
+
+ {% block content %}
+
+<div class="posts">
+        {% for article in articles %}
+          <article class="post clearfix">
+      
+            <h2><a href="{{ SITEURL }}{{ article.url }}">{{ article.title }}</a></h2>
+            <div class="date">{{ article.date|strftime('%B %d, %Y') }}</div>
+            {% for tag in article.tags %}
+            <a class="tag" href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>
+            {% endfor %}
+      
+          </article>
+        {% endfor %}
+
+{% endblock content %}
+      

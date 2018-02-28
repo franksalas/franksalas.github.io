@@ -48,7 +48,7 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 
 # THEME and variables
-THEME = './themes/salasdev'
+THEME = './themes/salasClean'
 
 SHOW_ARCHIVES = False
 SHOW_TAGS = False
@@ -58,8 +58,8 @@ SHOW_TAGS = False
 
 
 #### Plugins ####
-#MARKUP = ('md', 'ipynb')
-MARKUP = ('md',)
+MARKUP = ('md', 'ipynb')
+#MARKUP = ('md',)
 
 MARKDOWN = {
     'extension_configs': {
@@ -87,8 +87,7 @@ PLUGINS = ['render_math',
 
 
 
-
-# IPYNB_IGNORE_CSS=True
+IPYNB_IGNORE_CSS=True
 
 
 
