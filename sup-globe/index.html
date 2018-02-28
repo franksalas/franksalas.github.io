@@ -1,77 +1,56 @@
+<!-- rocessed for each article -->
+
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<head>
-    <title>salas</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+<html>
+  <head>
+    <title> this is a title</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/theme/css/font-awesome.min.css">
-<link rel="stylesheet" href="/theme/css/bootstrap.css">
-<link rel="stylesheet" href="/theme/css/pygment.css">
-<link rel="stylesheet" href="/theme/css/styles.css"></head>
+<link rel="stylesheet" type="text/css" href="/theme/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="/theme/css/pygment.css" />  </head>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">salas</a></h1>
+          </div>
+<div class="svg-icons">
+      <a class="nav-link" href="https://www.linkedin.com/in/frank-salas/"><i class="fa fa-linkedin"></i></a>
+      <a class="nav-link" href="http://github.com/franksalas"><i class="fa fa-github"></i></a>
+</div>        </header>
+      </div>
+    </div>
+    <div id="main" role="main" class="container">
 
-<body>
-    <!-- navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-  <!-- logo -->
-  <a class="navbar-brand" href="/">
-        <i class="fa fa-code "></i> salas</a>
-  <!-- logo -->
-  <!-- hambrg -->
-  <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-  <!-- hambrg -->
+<article class="post">
 
-  <!-- links -->
-
-  <div class="collapse navbar-collapse" id="collapse_target">
-
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/frank-salas/"><i class="fa fa-linkedin"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://github.com/franksalas"><i class="fa fa-github"></i></a>
-      </li>
-
-    </ul>
-  </div>
-  <!-- links -->
-</nav>    <!-- navbar -->
-<!-- <p>blog STARTS here</p> -->
-    <!-- blogsection -->
-    <div class="container">
-<!-- <h1>inside ARTICLE</h1> -->
-
-
-<div class="container mt-5">
-
-        <header>
-            <h1>sup globe</h1>
-            <div class="date">January 16, 2016</div>
-
-
-        </header>
-
-        <div class="mt-5 entry-content">
-            <!-- No title  -->
+        <h1 class="title">sup globe</h1>
+      
+        <div class="entry">
+                <!-- No title  -->
 
 <p><img class="rounded mx-auto d-block" src="/images/sup-globe/doggo.jpg" title="image desc" alt="image desc"></p>
-            <br>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_entry</span><span class="p">(</span><span class="n">title</span><span class="p">):</span>
+    <span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+    <span class="n">slug</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">&quot;content/images/{}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">slug</span><span class="p">))</span>
+    <span class="n">f_create</span> <span class="o">=</span> <span class="s2">&quot;content/articles/{}.md&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">slug</span><span class="p">)</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">TEMPLATE</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span>
+                                <span class="n">year</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">year</span><span class="p">,</span>
+                                <span class="n">month</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span>
+                                <span class="n">day</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
+                                <span class="n">hour</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+                                <span class="n">minute</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span>
+                                <span class="n">slug</span><span class="o">=</span><span class="n">slug</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">f_create</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;File created -&gt; &quot;</span> <span class="o">+</span> <span class="n">f_create</span><span class="p">)</span>
+</pre></div>
         </div>
-        </div>
+    
+      </article>
     </div>
-
-
-    <!-- blogsection -->
-
-<!-- <p>blog END here</p> -->
-
 <!-- scripts -->
-<script src="/theme/js/jquery.min.js"></script>
-<script src="/theme/js/popper.min.js"></script>
-<script src="/theme/js/bootstrap.min.js"></script></body>
+<script src="/theme/js/jquery.min.js"></script>  </body>
 </html>
