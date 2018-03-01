@@ -1,22 +1,16 @@
 <!-- processed for each tag -->
 {% extends "base.html" %}
-<!-- {% block title %}Archives{% endblock %} -->
-<!-- {% block headerimg %}{{ DEFAUT_HEADER_BG }}{% endblock %} -->
-
 {% block content %}
 
 <div class="posts">
     <h1 class="tag">#{{ tag }}</h1>
         {% for article in articles %}
           <article class="post clearfix">
-      
             <h2><a href='/{{ article.url }}'>{{ article.title }}</a></h2>
             <div class="date">{{ article.date|strftime('%B %d, %Y') }}</div>
             {% for tag in article.tags %}
             <a class="tag" href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>
             {% endfor %}
-      
           </article>
         {% endfor %}
-
 {% endblock content %}

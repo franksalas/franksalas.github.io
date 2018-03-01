@@ -58,6 +58,4 @@ gulp.task('fonts', function() {
   })
 
 
-
-
 gulp.task('default', ['fa', 'fonts','pelican','watch','serve']);

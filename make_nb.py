@@ -11,6 +11,9 @@ Tags:
 Slug: {slug}
 Status: published
 
+[download this notebook](https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks)
+
+
 {{% notebook notebooks/{slug}/ %}}
 
 

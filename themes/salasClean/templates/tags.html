@@ -5,11 +5,8 @@
 <article class="post">
     {% for article in articles %}
         {% for tag in article.tags %}   
-        <a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">#{{ tag }}</a>
+        <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>
         {% endfor %}
-        
-    
    {% endfor %}
-
 </article>
 {% endblock %}
