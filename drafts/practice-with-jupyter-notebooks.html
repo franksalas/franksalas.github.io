@@ -25,37 +25,11 @@
 
 <article class="post">
 
-        <h1 class="title">get api key</h1>
+        <h1 class="title">Practice with Jupyter notebooks</h1>
         <a href="/tag/notebook.html" class="tag">#notebook</a>
       
         <div class="entry">
-                <p><a href="https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/get-api-key/Untitled.ipynb">download this notebook</a></p>
-<ul>
-<li>
-<p>go to <a href="https://developers.google.com/maps/">google maps dev</a></p>
-</li>
-<li>
-<p>click on get started</p>
-</li>
-<li>
-<p>on the top park there will be a button, click on get a key</p>
-</li>
-</ul>
-<p>We are going to use <strong>Web APIs</strong> so click on Google Maps JavaScript API</p>
-<div class="highlight"><pre><span></span>AIzaSyC-mLUTfYy6RwWdhnXQ5y4bYnPJLl_NRE0 
-</pre></div>
-
-
-<h2>API LOCATUON</h2>
-<p>to check  your api location
-- https://console.developers.google.com/</p>
-<ul>
-<li>click on credentials</li>
-</ul>
-<h2>API LOCATUON</h2>
-<p>to check  your api location
-- https://console.developers.google.com/</p>
-<style type="text/css">/*!
+                <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1027,25 +1001,12 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="get-an-api-key-for-google-maps-development">get-an-api-key-for-google-maps-development<a class="anchor-link" href="#get-an-api-key-for-google-maps-development">¶</a></h1><h2 id="Create-a-jupyter-notebook">Create a jupyter notebook<a class="anchor-link" href="#Create-a-jupyter-notebook">¶</a></h2><h2 id="get-an-api-key">get an api key<a class="anchor-link" href="#get-an-api-key">¶</a></h2><ul>
-<li>steps with images
-## install google-maps-services-python</li>
-<li>steps</li>
-<li>create environmet</li>
-</ul>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># !pip install -U googlemaps</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'sup!'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1055,328 +1016,7 @@ h6:hover .anchor-link {
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Collecting googlemaps
-Collecting requests<3.0,>=2.11.1 (from googlemaps)
-  Using cached requests-2.18.4-py2.py3-none-any.whl
-Collecting idna<2.7,>=2.5 (from requests<3.0,>=2.11.1->googlemaps)
-  Using cached idna-2.6-py2.py3-none-any.whl
-Collecting urllib3<1.23,>=1.21.1 (from requests<3.0,>=2.11.1->googlemaps)
-  Using cached urllib3-1.22-py2.py3-none-any.whl
-Collecting certifi>=2017.4.17 (from requests<3.0,>=2.11.1->googlemaps)
-  Downloading certifi-2018.1.18-py2.py3-none-any.whl (151kB)
-    100% |████████████████████████████████| 153kB 615kB/s ta 0:00:01
-Requirement already up-to-date: chardet<3.1.0,>=3.0.2 in /Users/franciscosalas/.local/lib/python3.6/site-packages (from requests<3.0,>=2.11.1->googlemaps)
-Installing collected packages: idna, urllib3, certifi, requests, googlemaps
-  Found existing installation: certifi 2016.2.28
-    Uninstalling certifi-2016.2.28:
-      Successfully uninstalled certifi-2016.2.28
-Successfully installed certifi-2018.1.18 googlemaps-2.5.1 idna-2.6 requests-2.18.4 urllib3-1.22
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Install-google-maps-services-for-python">Install google maps services for python<a class="anchor-link" href="#Install-google-maps-services-for-python">¶</a></h3><p><a href="https://github.com/googlemaps/google-maps-services-python">https://github.com/googlemaps/google-maps-services-python</a></p>
-<div class="highlight"><pre><span></span>$ pip install -U googlemaps
-</pre></div>
-<h2 id="Get-directions">Get directions<a class="anchor-link" href="#Get-directions">¶</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [2]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">googlemaps</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span>
-<span class="n">API_KEY</span><span class="o">=</span> <span class="s1">'AIzaSyC-mLUTfYy6RwWdhnXQ5y4bYnPJLl_NRE0'</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [3]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gmaps</span> <span class="o">=</span> <span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">API_KEY</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<pre><code>geocode(*args, **kwargs)
-Geocoding is the process of converting addresses (like "1600 Amphitheatre Parkway, Mountain View, CA") into geographic coordinates (like latitude 37.423021 and longitude -122.083739), which you can use to place markers or position the map.</code></pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [52]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Geocoding an address</span>
-<span class="n">geocode_result</span> <span class="o">=</span> <span class="n">gmaps</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="s1">'1709 Broderick St, San Francisco, CA 94115'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [55]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> <span class="kn">import</span> <span class="nn">pprint</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">geocode_result</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt output_prompt">Out[55]:</div>
-<div class="output_text output_subarea output_execute_result">
-<pre>list</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [112]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">val</span> <span class="ow">in</span> <span class="n">geocode_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>address_components
-formatted_address
-geometry
-place_id
-types
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [56]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">geocode_result</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'address_components': [{'long_name': '1709',
-                          'short_name': '1709',
-                          'types': ['street_number']},
-                         {'long_name': 'Broderick Street',
-                          'short_name': 'Broderick St',
-                          'types': ['route']},
-                         {'long_name': 'Western Addition',
-                          'short_name': 'Western Addition',
-                          'types': ['neighborhood', 'political']},
-                         {'long_name': 'San Francisco',
-                          'short_name': 'SF',
-                          'types': ['locality', 'political']},
-                         {'long_name': 'San Francisco County',
-                          'short_name': 'San Francisco County',
-                          'types': ['administrative_area_level_2',
-                                    'political']},
-                         {'long_name': 'California',
-                          'short_name': 'CA',
-                          'types': ['administrative_area_level_1',
-                                    'political']},
-                         {'long_name': 'United States',
-                          'short_name': 'US',
-                          'types': ['country', 'political']},
-                         {'long_name': '94115',
-                          'short_name': '94115',
-                          'types': ['postal_code']},
-                         {'long_name': '2525',
-                          'short_name': '2525',
-                          'types': ['postal_code_suffix']}],
-  'formatted_address': '1709 Broderick St, San Francisco, CA 94115, USA',
-  'geometry': {'bounds': {'northeast': {'lat': 37.78637579999999,
-                                        'lng': -122.4419324},
-                          'southwest': {'lat': 37.7862901, 'lng': -122.44217}},
-               'location': {'lat': 37.7863453, 'lng': -122.4420461},
-               'location_type': 'ROOFTOP',
-               'viewport': {'northeast': {'lat': 37.78768193029149,
-                                          'lng': -122.4407022197085},
-                            'southwest': {'lat': 37.7849839697085,
-                                          'lng': -122.4434001802915}}},
-  'place_id': 'ChIJgSDqM8qAhYARCNcjXBHxkRI',
-  'types': ['premise']}]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [100]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">geocode_result</span><span class="p">:</span>
-    <span class="n">gps_loc</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="s1">'geometry'</span><span class="p">][</span><span class="s1">'location'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>  <span class="c1"># crate a tuple (lat,lng) from dictionary values</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="s1">'geometry'</span><span class="p">][</span><span class="s1">'location'</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{'lat': 37.7863453, 'lng': -122.4420461}
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [98]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gps_loc</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt output_prompt">Out[98]:</div>
-<div class="output_text output_subarea output_execute_result">
-<pre>(37.7863453, -122.4420461)</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">val</span> <span class="ow">in</span> <span class="n">geocode_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [101]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reverse_geocode_result</span> <span class="o">=</span> <span class="n">gmaps</span><span class="o">.</span><span class="n">reverse_geocode</span><span class="p">(</span><span class="n">gps_loc</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [117]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">val</span> <span class="ow">in</span> <span class="n">reverse_geocode_result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'geometry'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>bounds
-location
-location_type
-viewport
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [119]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># reverse_geocode_result</span>
-<span class="c1"># pprint.pprint(reverse_geocode_result)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [120]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">reverse_geocode_result</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="s1">'formatted_address'</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1709 Broderick St, San Francisco, CA 94115, USA
-2724 Bush St, San Francisco, CA 94115, USA
-Lower Pacific Heights, San Francisco, CA, USA
-Western Addition, San Francisco, CA, USA
-San Francisco, CA, USA
-San Francisco, CA 94115, USA
-San Francisco County, San Francisco, CA, USA
-San Francisco-Oakland-Fremont, CA, CA, USA
-San Francisco Metropolitan Area, CA, USA
-California, USA
-United States
+<pre>sup!
 </pre>
 </div>
 </div>
@@ -1413,9 +1053,8 @@ United States
 </script>
 
 
-<h2>download</h2>
-<p><a href="notebooks/get-api-key/Untitled.ipynb">download</a>
-Id aliqua in proident cillum enim proident consequat. Cupidatat ad anim eiusmod aliquip veniam officia laboris minim reprehenderit nostrud. Ut voluptate consectetur esse ut do magna amet officia fugiat dolor est sunt mollit do. Est magna pariatur consequat fugiat aliquip occaecat anim qui dolore do sint. In minim reprehenderit sint irure minim irure fugiat in anim. Deserunt reprehenderit et ex duis nulla irure voluptate.</p>
+<h2>Download</h2>
+<p><a href="https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/practice-with-jupyter-notebooks">download this notebook</a></p>
         </div>
     
       </article>
