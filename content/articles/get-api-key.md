@@ -2,7 +2,7 @@ Title: get api key
 Date: 2018-2-28 18:39
 Tags: notebook
 Slug: get-api-key
-Status: published
+Status: draft
 
 
 [download this notebook](https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/get-api-key)

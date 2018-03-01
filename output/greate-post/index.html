@@ -1,0 +1,123 @@
+<!-- rocessed for each article -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>salas</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/theme/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/theme/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="/theme/css/pygment.css" />  </head>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">salas</a></h1>
+          </div>
+<div class="svg-icons">
+      <a class="nav-link" href="https://www.linkedin.com/in/frank-salas/"><i class="fa fa-linkedin"></i></a>
+      <a class="nav-link" href="http://github.com/franksalas"><i class="fa fa-github"></i></a>
+</div>        </header>
+      </div>
+    </div>
+    <div id="main" role="main" class="container">
+
+<article class="post">
+
+        <h1 class="title">greate post</h1>
+      
+        <div class="entry">
+                <!-- No title  -->
+
+<h1>this is a test</h1>
+<p>Consequat enim consequat proident officia fugiat ea nulla laboris irure dolor aliquip duis. Nostrud minim aliquip aliqua aliqua aute aliqua ea voluptate. Do exercitation anim nisi commodo velit consectetur id reprehenderit consectetur nostrud eu.</p>
+<p>Adipisicing minim ut adipisicing reprehenderit incididunt et exercitation incididunt magna nulla nulla aliquip laborum velit. Laborum tempor ex sunt ullamco officia officia amet pariatur ipsum. Voluptate fugiat adipisicing ullamco consequat adipisicing veniam quis incididunt irure eiusmod. Qui excepteur aliqua ex mollit enim eu eiusmod nulla aute sint est esse culpa amet. Eiusmod qui tempor ea culpa in nostrud. Sint </p>
+<h2>math</h2>
+<div class="math">$$
+e=mc^2
+$$</div>
+<p>Non velit et quis ea. Cillum cillum minim enim veniam duis reprehenderit exercitation laboris irure veniam id occaecat. Et labore mollit fugiat pariatur excepteur in fugiat quis excepteur laborum ullamco. Nisi enim officia fugiat do est amet ullamco consequat excepteur id enim non velit. Culpa dolor laboris ea laborum id commodo pariatur dolore. Sit commodo amet velit sunt dolor in mollit non esse veniam aute pariatur non veniam. Ea voluptate aute cillum id aliquip ut exercitation.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_entry</span><span class="p">(</span><span class="n">title</span><span class="p">):</span>
+    <span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+    <span class="n">slug</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s2">&quot;content/notebooks/{}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">slug</span><span class="p">))</span>
+    <span class="n">f_create</span> <span class="o">=</span> <span class="s2">&quot;content/articles/{}.md&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">slug</span><span class="p">)</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">TEMPLATE</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span>
+                                <span class="n">year</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">year</span><span class="p">,</span>
+                                <span class="n">month</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span>
+                                <span class="n">day</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">,</span>
+                                <span class="n">hour</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+                                <span class="n">minute</span><span class="o">=</span><span class="n">today</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span>
+                                <span class="n">slug</span><span class="o">=</span><span class="n">slug</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">f_create</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;File created -&gt; &quot;</span> <span class="o">+</span> <span class="n">f_create</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Ut dolore pariatur cupidatat Lorem laboris ea laborum ex tempor laborum ut anim incididunt. Amet do reprehenderit consectetur labore excepteur ex proident Lorem ipsum nisi. Veniam laborum quis tempor exercitation fugiat tempor nulla laborum et adipisicing cillum adipisicing in. Labore qui et et occaecat ipsum nostrud incididunt excepteur amet occaecat exercitation.</p>
+<p>Laborum minim duis nulla aliqua minim fugiat cillum velit Lorem nisi sit pariatur aliquip cillum. Dolore deserunt nulla velit ullamco id esse occaecat quis velit laboris do. Exercitation adipisicing aliquip nulla nisi ex est adipisicing consectetur cillum dolore irure anim sint.</p>
+<p><img class="rounded mx-auto d-block" src="/images/greate-post/" title="image desc" alt="image desc"></p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+        </div>
+    
+      </article>
+    </div>
+<!-- scripts -->
+<!-- <script src="/theme/js/jquery.min.js"></script> -->  </body>
+</html>
