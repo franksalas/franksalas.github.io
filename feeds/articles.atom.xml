@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>salas - articles</title><link href="/" rel="alternate"></link><link href="/feeds/articles.atom.xml" rel="self"></link><id>/</id><updated>2018-02-28T18:39:00+00:00</updated><entry><title>get api key</title><link href="/get-api-key/" rel="alternate"></link><published>2018-02-28T18:39:00+00:00</published><updated>2018-02-28T18:39:00+00:00</updated><author><name>Francisco Salas</name></author><id>tag:None,2018-02-28:/get-api-key/</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/Untitled.ipynb"&gt;download this notebook&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>salas - articles</title><link href="/" rel="alternate"></link><link href="/feeds/articles.atom.xml" rel="self"></link><id>/</id><updated>2018-02-28T18:39:00+00:00</updated><entry><title>get api key</title><link href="/get-api-key/" rel="alternate"></link><published>2018-02-28T18:39:00+00:00</published><updated>2018-02-28T18:39:00+00:00</updated><author><name>Francisco Salas</name></author><id>tag:None,2018-02-28:/get-api-key/</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/get-api-key/Untitled.ipynb"&gt;download this notebook&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;go to &lt;a href="https://developers.google.com/maps/"&gt;google maps dev&lt;/a&gt;&lt;/p&gt;
@@ -18,7 +18,7 @@
 
 &lt;h2&gt;API LOCATUON&lt;/h2&gt;
 &lt;p&gt;to check  your api location
-- https://console …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/Untitled.ipynb"&gt;download this notebook&lt;/a&gt;&lt;/p&gt;
+- https://console …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/get-api-key/Untitled.ipynb"&gt;download this notebook&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;go to &lt;a href="https://developers.google.com/maps/"&gt;google maps dev&lt;/a&gt;&lt;/p&gt;
