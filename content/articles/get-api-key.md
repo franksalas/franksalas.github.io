@@ -5,7 +5,7 @@ Slug: get-api-key
 Status: published
 
 
-[download this notebook](https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/Untitled.ipynb)
+[download this notebook](https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/get-api-key)
 
 
 - go to [google maps dev](https://developers.google.com/maps/)
@@ -43,6 +43,4 @@ to check  your api location
 
 
 ## download
-
-[download](notebooks/get-api-key/Untitled.ipynb)
-Id aliqua in proident cillum enim proident consequat. Cupidatat ad anim eiusmod aliquip veniam officia laboris minim reprehenderit nostrud. Ut voluptate consectetur esse ut do magna amet officia fugiat dolor est sunt mollit do. Est magna pariatur consequat fugiat aliquip occaecat anim qui dolore do sint. In minim reprehenderit sint irure minim irure fugiat in anim. Deserunt reprehenderit et ex duis nulla irure voluptate.
+[download this notebook](https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks/get-api-key)

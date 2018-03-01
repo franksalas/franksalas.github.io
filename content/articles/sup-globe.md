@@ -8,5 +8,4 @@ Status: published
   <!-- No title  -->
 
 
-
 {% img rounded mx-auto d-block /images/sup-globe/doggo.jpg image desc %}
