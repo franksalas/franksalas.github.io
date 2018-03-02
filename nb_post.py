@@ -94,7 +94,7 @@ def main(title):
     bg_slug = slug_title(title_clean)  # create slug
     nb_dir = make_nb_dir(bg_slug)
     copy_nb(nb_dir,bg_slug)  # create a notebook
-    #make_dirs(bg_slug)  # create image directory
+    make_dirs(bg_slug)  # create image directory
     fill_md(md_temp,title,bg_slug)  # load empty template with data and save
     #test_copy_nb(bg_slug)
 

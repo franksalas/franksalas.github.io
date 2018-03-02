@@ -4,12 +4,33 @@ var browserSync = require('browser-sync').create();
 var exec = require('child_process').exec;
 
 
+// Compile sass into CSS & auto-inject into browsers
+// gulp.task('sass', function() {
+//     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
+//       .pipe(sass())
+//       .pipe(gulp.dest("src/css"))
+//       .pipe(gulp.dest("static/css"))
+//       .pipe(browserSync.stream());
+//   });
+
+
+
+// // sass
+// gulp.task('sass', function(){
+//     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'app/scss/**/*.scss'])
+//     //return gulp.src('app/scss/**/*.scss')  // get all file sending with .scss in app/scss
+//     .pipe(sass())  // converts Sass to CSS with gulp-sass
+//     .pipe(gulp.dest('themes/salasClean/static/css'))
+// });
+
 // sass
 gulp.task('sass', function(){
+    //return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'app/scss/**/*.scss'])
     return gulp.src('app/scss/**/*.scss')  // get all file sending with .scss in app/scss
     .pipe(sass())  // converts Sass to CSS with gulp-sass
     .pipe(gulp.dest('themes/salasClean/static/css'))
 });
+
 
 
 
