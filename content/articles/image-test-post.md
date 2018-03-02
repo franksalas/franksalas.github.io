@@ -1,7 +1,7 @@
 Title: Image test post 
 Date: 2018-3-1
 Slug: image-test-post
-Status: published
+Status: draft
     
 
 ### 800x400

@@ -2,7 +2,7 @@ Title: Practice with Jupyter notebooks
 Date: 2018-2-28 20:24
 Tags: notebook
 Slug: practice-with-jupyter-notebooks
-Status: published
+Status: draft
 
 
 {% notebook notebooks/practice-with-jupyter-notebooks/practice-with-jupyter-notebooks.ipynb %}

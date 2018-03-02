@@ -2,7 +2,7 @@ Title: Get an API Key for Google Maps Development
 Date: 2018-2-28 16:15
 Tags:
 Slug: get-an-api-key-for-google-maps-development
-Status: published
+Status: draft
 
 [download this notebook](https://github.com/franksalas/franksalas.github.io/tree/src/content/notebooks)
 

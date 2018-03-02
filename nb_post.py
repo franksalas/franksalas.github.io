@@ -7,7 +7,7 @@ from string import punctuation
 
 def template():
     post_template ="""
-    Title: {title} \nDate: {year}-{month}-{day}\nSlug: {slug}\nStatus: published
+    Title: {title} \nDate: {year}-{month}-{day}\nTags: notebook\nSlug: {slug}\nStatus: published
     \n\n\n\n{{% notebook notebooks/{slug}/{slug}.ipynb %}}
     """
     return post_template

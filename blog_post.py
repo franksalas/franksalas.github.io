@@ -7,7 +7,7 @@ from string import punctuation
 
 def template():
     post_template ="""
-    Title: {title} \nDate: {year}-{month}-{day}\nSlug: {slug}\nStatus: published
+    Title: {title} \nDate: {year}-{month}-{day}\nTags: \nSlug: {slug}\nStatus: published
     \n\n\n\n{{% img rounded mx-auto d-block /images/{slug}/ image desc %}}
     """
     return post_template

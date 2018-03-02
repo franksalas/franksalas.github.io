@@ -1,12 +1,13 @@
 Title: Get API Key Google Developers 
 Date: 2018-3-1
+Tags: notebook
 Slug: get-api-key-google-developers
-Status: published
+Status: draft
     
 
 Commodo deserunt voluptate pariatur fugiat elit qui deserunt dolore ea non qui. Ut cillum do in irure pariatur anim labore veniam mollit do irure. Magna nulla consequat sunt aliqua. Officia ea sunt veniam est sit dolore occaecat sint enim nulla. Enim nostrud excepteur irure velit sint officia est sit Lorem mollit. Culpa eu sint eiusmod qui dolor. Laborum occaecat aliquip labore pariatur.
 
-{% img rounded mx-auto d-block /images/get-api-key-google-developers/logo.jpg logo %}
+{% img rounded mx-auto d-block /images/get-api-key-google-developers/google-dev.svg logo %}
 
 
 Aliquip aliqua voluptate et culpa minim commodo tempor sit sunt labore anim enim occaecat occaecat. Aliquip sunt adipisicing est mollit do amet consectetur exercitation duis voluptate. Consequat culpa dolore eu tempor enim dolor laborum velit commodo nostrud aliquip excepteur. Duis commodo cupidatat duis tempor commodo consectetur pariatur proident.
