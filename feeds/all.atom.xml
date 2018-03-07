@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>salas</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2018-02-28T00:00:00+00:00</updated><entry><title>Getting a Google Maps API Key</title><link href="/getting-a-google-maps-api-key/" rel="alternate"></link><published>2018-02-28T00:00:00+00:00</published><updated>2018-02-28T00:00:00+00:00</updated><author><name>Francisco Salas</name></author><id>tag:None,2018-02-28:/getting-a-google-maps-api-key/</id><summary type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>salas</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2018-02-28T00:00:00+00:00</updated><entry><title>Working with Google Maps API</title><link href="/working-with-google-maps-api/" rel="alternate"></link><published>2018-02-28T00:00:00+00:00</published><updated>2018-02-28T00:00:00+00:00</updated><author><name>Francisco Salas</name></author><id>tag:None,2018-02-28:/working-with-google-maps-api/</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1019,8 +1019,8 @@ h6:hover .anchor-link {
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Tools"&gt;Tools&lt;a class="anchor-link" href="#Tools"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Google maps API Key&lt;/li&gt;
-&lt;li&gt;Python Client for Google Maps Services&lt;/li&gt;
-&lt;li&gt;Jupyter Notebook&lt;/li&gt;
+&lt;li&gt;Python Client for Google Maps Services
+-Jupyter Notebook&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1030,12 +1030,14 @@ h6:hover .anchor-link {
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Get-Google-Maps-API-Key"&gt;Get Google Maps API Key&lt;a class="anchor-link" href="#Get-Google-Maps-API-Key"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;Go to &lt;a href="https://developers.google.com/maps/"&gt;Google Maps APIs&lt;/a&gt; and click on get started&lt;/li&gt;
+&lt;li&gt;Go to Google Maps APIs and click on get started&lt;/li&gt;
 &lt;li&gt;Scroll down to the Web APIs section and select Google Maps JavaScrip API&lt;/li&gt;
-&lt;li&gt;On the top right side, click on the button &lt;code&gt;GET A KEY&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;A pop up will show up asking you to select or create a project, click, on it and select &lt;code&gt;+ Create a new Project&lt;/code&gt;, the default name will be My Project, click next.&lt;/li&gt;
+&lt;li&gt;On the top right side, click on the button GET A KEY  &lt;/li&gt;
+&lt;li&gt;A pop up will show up asking you to select or create a project, click, on it and select + Create a new Project, the default&lt;/li&gt;
+&lt;li&gt;name will be My Project, click next.&lt;/li&gt;
 &lt;li&gt;A few second later the your generated API key will show up.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img alt="image" src="../../images/working-with-google-maps-api/api.png"/&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1048,22 +1050,17 @@ h6:hover .anchor-link {
 
 &lt;span class="nb"&gt;cd&lt;/span&gt; googleDev
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Inside your new directory create a new enviroment named: &lt;code&gt;googleDev&lt;/code&gt; and activate&lt;/p&gt;
+&lt;p&gt;Inside your new directory create a new enviroment named: googleDev and activate&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;conda create -n googleDev &lt;span class="nv"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;3&lt;/span&gt;.6
 
-&lt;span class="nb"&gt;source&lt;/span&gt; activate googleDev
+&lt;span class="nb"&gt;source&lt;/span&gt; activate googleDe
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Install required libraries:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Jupyter notebook&lt;/p&gt;
+&lt;h3 id="Install-required-libraries:"&gt;Install required libraries:&lt;a class="anchor-link" href="#Install-required-libraries:"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Jupyter notebook&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;conda install jupyter
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Python Client for Google Maps Services&lt;/p&gt;
+&lt;p&gt;Python Client for Google Maps Services&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install -U googlemaps
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1077,7 +1074,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;googlemaps&lt;/span&gt;  &lt;span class="c1"&gt;# import googlemaps library&lt;/span&gt;
@@ -1099,7 +1096,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;gmaps&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;googlemaps&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Client&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;API_KEY&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1118,7 +1115,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [8]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Geocoding an address&lt;/span&gt;
@@ -1131,7 +1128,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pprint&lt;/span&gt;  &lt;span class="c1"&gt;# "pretty-print" arbitrary Python data structures&lt;/span&gt;
@@ -1195,7 +1192,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [10]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;geocode_result&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
@@ -1208,7 +1205,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [11]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;gps_loc&lt;/span&gt;
@@ -1219,7 +1216,7 @@ h6:hover .anchor-link {
 &lt;div class="output_wrapper"&gt;
 &lt;div class="output"&gt;
 &lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[11]:&lt;/div&gt;
+&lt;div class="prompt output_prompt"&gt;Out[9]:&lt;/div&gt;
 &lt;div class="output_text output_subarea output_execute_result"&gt;
 &lt;pre&gt;(37.7863453, -122.4420461)&lt;/pre&gt;
 &lt;/div&gt;
