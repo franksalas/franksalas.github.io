@@ -59,8 +59,8 @@ gulp.task('pelican', function(cb){
 
 
 gulp.task('watch', function(){
-    //gulp.watch('app/scss/**/*.scss',['sass','pelican', browserSync.reload]);
-    gulp.watch('content/**', ['pelican', browserSync.reload]);
+    gulp.watch('app/scss/**/*.scss',['sass','pelican', browserSync.reload]);
+    //gulp.watch('content/**', ['pelican', browserSync.reload]);
 });
 
 
