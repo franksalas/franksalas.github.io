@@ -1019,8 +1019,8 @@ h6:hover .anchor-link {
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Tools"&gt;Tools&lt;a class="anchor-link" href="#Tools"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Google maps API Key&lt;/li&gt;
-&lt;li&gt;Python Client for Google Maps Services
--Jupyter Notebook&lt;/li&gt;
+&lt;li&gt;Python Client for Google Maps Services&lt;/li&gt;
+&lt;li&gt;Jupyter Notebook&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
