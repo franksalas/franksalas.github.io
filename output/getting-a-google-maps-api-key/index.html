@@ -27,59 +27,12 @@
 
 <article class="post">
 
-        <h1 class="title">Working with Google Maps API</h1>
+        <h1 class="title">Getting a Google Maps API Key</h1>
         <a href="/tag/notebook.html" class="tag">#notebook</a>
         <a href="/tag/api.html" class="tag">#api</a>
       
         <div class="entry">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
                 <style type="text/css">/*!
-=======
-                <p><img class="rounded mx-auto d-block" src="/images/get-api-key-google-developers/google-dev.svg" title="logo" alt="logo"></p>
-<h2>Tools</h2>
-<ul>
-<li>Google maps API Key</li>
-<li>Python Client for Google Maps Services</li>
-<li>Jupyter Notebook</li>
-</ul>
-<h2>Get Google Maps API Key</h2>
-<ol>
-<li>Go to <a href="https://developers.google.com/maps/">Google Maps APIs</a> and click on get started</li>
-<li>Scroll down to the Web APIs section and select Google Maps JavaScrip API</li>
-<li>On the top right side, click on the button <code>GET A KEY</code></li>
-<li>A pop up will show up asking you to select or create a project, click, on it and select <code>+ Create a new Project</code>, the default name will be My Project, click next.</li>
-<li>A few second later the your generated API key will show up.</li>
-</ol>
-<p><img class="rounded mx-auto d-block" src="/images/get-api-key-google-developers/api6.png" title="logo" alt="logo"></p>
-<h2>Enviroment</h2>
-<p>Create a directory and move into it</p>
-<div class="highlight"><pre><span></span>mkdir googleDev
-
-<span class="nb">cd</span> googleDev
-</pre></div>
-
-
-<p>Inside your new directory create a new enviroment named: <code>googleDev</code> and activate</p>
-<div class="highlight"><pre><span></span>conda create -n googleDev <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6
-
-<span class="nb">source</span> activate googleDev
-</pre></div>
-
-
-<p>Install required libraries:</p>
-<p>Jupyter notebook</p>
-<div class="highlight"><pre><span></span>conda install jupyter  
-</pre></div>
-
-
-<p>Python Client for Google Maps Services</p>
-<div class="highlight"><pre><span></span>pip install -U googlemaps
-</pre></div>
-
-
-<h2>Notebook</h2>
-<style type="text/css">/*!
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
 *
 * IPython notebook
 *
@@ -1065,8 +1018,8 @@ h6:hover .anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Tools">Tools<a class="anchor-link" href="#Tools">¶</a></h2><ul>
 <li>Google maps API Key</li>
-<li>Python Client for Google Maps Services
--Jupyter Notebook</li>
+<li>Python Client for Google Maps Services</li>
+<li>Jupyter Notebook</li>
 </ul>
 </div>
 </div>
@@ -1076,14 +1029,12 @@ h6:hover .anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Get-Google-Maps-API-Key">Get Google Maps API Key<a class="anchor-link" href="#Get-Google-Maps-API-Key">¶</a></h2><ol>
-<li>Go to Google Maps APIs and click on get started</li>
+<li>Go to <a href="https://developers.google.com/maps/">Google Maps APIs</a> and click on get started</li>
 <li>Scroll down to the Web APIs section and select Google Maps JavaScrip API</li>
-<li>On the top right side, click on the button GET A KEY  </li>
-<li>A pop up will show up asking you to select or create a project, click, on it and select + Create a new Project, the default</li>
-<li>name will be My Project, click next.</li>
+<li>On the top right side, click on the button <code>GET A KEY</code></li>
+<li>A pop up will show up asking you to select or create a project, click, on it and select <code>+ Create a new Project</code>, the default name will be My Project, click next.</li>
 <li>A few second later the your generated API key will show up.</li>
 </ol>
-<p><img alt="image" src="../../images/working-with-google-maps-api/api.png"/></p>
 </div>
 </div>
 </div>
@@ -1096,17 +1047,22 @@ h6:hover .anchor-link {
 
 <span class="nb">cd</span> googleDev
 </pre></div>
-<p>Inside your new directory create a new enviroment named: googleDev and activate</p>
+<p>Inside your new directory create a new enviroment named: <code>googleDev</code> and activate</p>
 <div class="highlight"><pre><span></span>conda create -n googleDev <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6
 
-<span class="nb">source</span> activate googleDe
+<span class="nb">source</span> activate googleDev
 </pre></div>
-<h3 id="Install-required-libraries:">Install required libraries:<a class="anchor-link" href="#Install-required-libraries:">¶</a></h3><p>Jupyter notebook</p>
+<p>Install required libraries:</p>
+<ul>
+<li><p>Jupyter notebook</p>
 <div class="highlight"><pre><span></span>conda install jupyter
 </pre></div>
-<p>Python Client for Google Maps Services</p>
+</li>
+<li><p>Python Client for Google Maps Services</p>
 <div class="highlight"><pre><span></span>pip install -U googlemaps
 </pre></div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1120,7 +1076,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">googlemaps</span>  <span class="c1"># import googlemaps library</span>
@@ -1131,11 +1087,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
 <div class="prompt input_prompt">In [3]:</div>
-=======
-<div class="prompt input_prompt">In [2]:</div>
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">API_KEY</span> <span class="o">=</span> <span class="s1">'AIzaSyC-mLUTfYy6RwWdhnXQ5y4bYnPJLl_NRE0'</span>  <span class="c1"># <--- Your new API KEY...MEMBER?</span>
@@ -1146,11 +1098,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
-<div class="prompt input_prompt">In [4]:</div>
-=======
-<div class="prompt input_prompt">In [3]:</div>
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
+<div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gmaps</span> <span class="o">=</span> <span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">API_KEY</span><span class="p">)</span>
@@ -1163,28 +1111,17 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
 <h2 id="Find-the-latitude-longtitude-for-the-Full-House-Address">Find the latitude longtitude for the <a href="https://www.google.com/search?ei=uziaWr6tNdHesAX_85C4Bw&q=full+house+address&oq=full+house+address&gs_l=psy-ab.3..0i71k1l8.0.0.0.2407.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.4REwVOB18rw">Full House Address</a><a class="anchor-link" href="#Find-the-latitude-longtitude-for-the-Full-House-Address">¶</a></h2>
-=======
-<h2 id="Find-the-latitude-longtitude-for-the-Full-House">Find the latitude longtitude for the Full House<a class="anchor-link" href="#Find-the-latitude-longtitude-for-the-Full-House">¶</a></h2>
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
-<div class="prompt input_prompt">In [5]:</div>
+<div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Geocoding an address</span>
 
-=======
-<div class="prompt input_prompt">In [4]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Geocoding an address</span>
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
 <span class="n">geocode_result</span> <span class="o">=</span> <span class="n">gmaps</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="s1">'1709 Broderick St, San Francisco, CA, 94115'</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1193,17 +1130,10 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
-<div class="prompt input_prompt">In [6]:</div>
+<div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pprint</span>  <span class="c1"># "pretty-print" arbitrary Python data structures</span>
-=======
-<div class="prompt input_prompt">In [5]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pprint</span>  <span class="c1"># “pretty-print” arbitrary Python data structures</span>
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
 
 <span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">geocode_result</span><span class="p">)</span>
 </pre></div>
@@ -1264,11 +1194,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
-<div class="prompt input_prompt">In [7]:</div>
-=======
-<div class="prompt input_prompt">In [6]:</div>
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
+<div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">geocode_result</span><span class="p">:</span>
@@ -1281,11 +1207,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
-<div class="prompt input_prompt">In [9]:</div>
-=======
-<div class="prompt input_prompt">In [7]:</div>
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
+<div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gps_loc</span>
@@ -1296,11 +1218,7 @@ h6:hover .anchor-link {
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<<<<<<< HEAD:output/working-with-google-maps-api/index.html
-<div class="prompt output_prompt">Out[9]:</div>
-=======
-<div class="prompt output_prompt">Out[7]:</div>
->>>>>>> aed2735dd2f7d2a04cbdbec4a27d07ceae5a97ff:output/drafts/get-api-key-google-developers.html
+<div class="prompt output_prompt">Out[11]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>(37.7863453, -122.4420461)</pre>
 </div>
