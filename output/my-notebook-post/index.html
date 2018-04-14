@@ -27,9 +27,8 @@
 
 <article class="post">
 
-        <h1 class="title">Working with Google Maps API</h1>
+        <h1 class="title">my notebook post</h1>
         <a href="/tag/notebook.html" class="tag">#notebook</a>
-        <a href="/tag/api.html" class="tag">#api</a>
       
         <div class="entry">
                 <style type="text/css">/*!
@@ -1004,120 +1003,25 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img alt="logo" src="https://developers.google.com/_static/b978c21594/images/redesign-14/lockup-color.svg"/></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tools">Tools<a class="anchor-link" href="#Tools">¶</a></h2><ul>
-<li>Google maps API Key</li>
-<li><a href="https://github.com/google/google-api-python-client">Python Client for Google Maps Services</a></li>
-<li><a href="https://github.com/pbugnion/gmaps">gmaps: plugin for Jupyter for embedding Google Maps</a></li>
-<li>Jupyter Notebook</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Get-Google-Maps-API-Key">Get Google Maps API Key<a class="anchor-link" href="#Get-Google-Maps-API-Key">¶</a></h2><ol>
-<li>Go to Google Maps APIs and click on get started</li>
-<li>Scroll down to the Web APIs section and select Google Maps JavaScrip API</li>
-<li>On the top right side, click on the button GET A KEY  </li>
-<li>A pop up will show up asking you to select or create a project, click, on it and select + Create a new Project, the default</li>
-<li>name will be My Project, click next.</li>
-<li>A few second later the your generated API key will show up.</li>
-</ol>
-<p><img alt="image" src="../../images/working-with-google-maps-api/api.png"/></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Enviroment">Enviroment<a class="anchor-link" href="#Enviroment">¶</a></h2><p>Create a directory and move into it</p>
-<div class="highlight"><pre><span></span>mkdir googleDev
-
-<span class="nb">cd</span> googleDev
-</pre></div>
-<p>Inside your new directory create a new enviroment named: googleDev and activate</p>
-<div class="highlight"><pre><span></span>conda create -n googleDev <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.6
-
-<span class="nb">source</span> activate googleDev
-</pre></div>
-<h3 id="Install-required-libraries">Install required libraries<a class="anchor-link" href="#Install-required-libraries">¶</a></h3><p>Jupyter notebook</p>
-<div class="highlight"><pre><span></span>conda install jupyter
-</pre></div>
-<p>Python Client for Google Maps Services</p>
-<div class="highlight"><pre><span></span>pip install -U googlemaps
-</pre></div>
-<p>gmaps: plugin for Jupyter for embedding Google Maps</p>
-<div class="highlight"><pre><span></span>pip install gmaps
-</pre></div>
-<p>Make sure that you have enabled ipywidgets widgets extensions:</p>
-<div class="highlight"><pre><span></span>jupyter nbextension <span class="nb">enable</span> --py --sys-prefix widgetsnbextension
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Code">Code<a class="anchor-link" href="#Code">¶</a></h2>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [2]:</div>
+<div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">googlemaps</span>  <span class="c1"># import googlemaps library</span>
-<span class="kn">import</span> <span class="nn">gmaps</span>  <span class="c1"># ineractive library</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'sup!'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [3]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">API_KEY</span> <span class="o">=</span> <span class="s1">'AIzaSyC-mLUTfYy6RwWdhnXQ5y4bYnPJLl_NRE0'</span>  <span class="c1"># <--- Your new API KEY...MEMBER?</span>
-</pre></div>
-</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>sup!
+</pre>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [4]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gmaps_dev</span> <span class="o">=</span> <span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">API_KEY</span><span class="p">)</span> <span class="c1">## </span>
-<span class="n">gmaps</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">API_KEY</span><span class="p">)</span> <span class="c1"># </span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Find-the-latitude-longtitude-for-the-Full-House-Address">Find the latitude longtitude for the <a href="https://www.google.com/search?ei=uziaWr6tNdHesAX_85C4Bw&q=full+house+address&oq=full+house+address&gs_l=psy-ab.3..0i71k1l8.0.0.0.2407.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.4REwVOB18rw">Full House Address</a><a class="anchor-link" href="#Find-the-latitude-longtitude-for-the-Full-House-Address">¶</a></h2>
 </div>
 </div>
 </div>
@@ -1126,9 +1030,9 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Geocoding an address</span>
-
-<span class="n">geocode_result</span> <span class="o">=</span> <span class="n">gmaps_dev</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="s1">'1709 Broderick St, San Francisco, CA, 94115'</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">myfun</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">var</span> <span class="o">=</span> <span class="s2">"hello </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">var</span>
 </pre></div>
 </div>
 </div>
@@ -1139,8 +1043,9 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pprint</span>  <span class="c1"># "pretty-print" arbitrary Python data structures</span>
-<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">geocode_result</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">myfun</span><span class="p">(</span><span class="s1">'francisco'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1150,144 +1055,10 @@ h6:hover .anchor-link {
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'address_components': [{'long_name': '1709',
-                          'short_name': '1709',
-                          'types': ['street_number']},
-                         {'long_name': 'Broderick Street',
-                          'short_name': 'Broderick St',
-                          'types': ['route']},
-                         {'long_name': 'Western Addition',
-                          'short_name': 'Western Addition',
-                          'types': ['neighborhood', 'political']},
-                         {'long_name': 'San Francisco',
-                          'short_name': 'SF',
-                          'types': ['locality', 'political']},
-                         {'long_name': 'San Francisco County',
-                          'short_name': 'San Francisco County',
-                          'types': ['administrative_area_level_2',
-                                    'political']},
-                         {'long_name': 'California',
-                          'short_name': 'CA',
-                          'types': ['administrative_area_level_1',
-                                    'political']},
-                         {'long_name': 'United States',
-                          'short_name': 'US',
-                          'types': ['country', 'political']},
-                         {'long_name': '94115',
-                          'short_name': '94115',
-                          'types': ['postal_code']},
-                         {'long_name': '2525',
-                          'short_name': '2525',
-                          'types': ['postal_code_suffix']}],
-  'formatted_address': '1709 Broderick St, San Francisco, CA 94115, USA',
-  'geometry': {'bounds': {'northeast': {'lat': 37.78637579999999,
-                                        'lng': -122.4419324},
-                          'southwest': {'lat': 37.7862901, 'lng': -122.44217}},
-               'location': {'lat': 37.7863453, 'lng': -122.4420461},
-               'location_type': 'ROOFTOP',
-               'viewport': {'northeast': {'lat': 37.78768193029149,
-                                          'lng': -122.4407022197085},
-                            'southwest': {'lat': 37.7849839697085,
-                                          'lng': -122.4434001802915}}},
-  'place_id': 'ChIJgSDqM8qAhYARCNcjXBHxkRI',
-  'types': ['premise']}]
+<pre>hello francisco
 </pre>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [7]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">geocode_result</span><span class="p">:</span>
-    <span class="c1"># create a tuple (lat,lng) from dictionary values</span>
-    <span class="n">full_house</span> <span class="o">=</span> <span class="p">[</span><span class="nb">tuple</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="s1">'geometry'</span><span class="p">][</span><span class="s1">'location'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">())]</span>  <span class="c1"># list of a tuple</span>
-    
-<span class="n">full_house</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt output_prompt">Out[7]:</div>
-<div class="output_text output_subarea output_execute_result">
-<pre>[(37.7863453, -122.4420461)]</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Find-the-House-based-on-coordinates">Find the House based on coordinates<a class="anchor-link" href="#Find-the-House-based-on-coordinates">¶</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [8]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbextension <span class="nb">enable</span> --py --sys-prefix gmaps
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Enabling notebook extension jupyter-gmaps/extension...
-      - Validating: <span class="ansi-green-fg">OK</span>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [9]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span><span class="n">gmaps</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">marker</span> <span class="o">=</span> <span class="n">gmaps</span><span class="o">.</span><span class="n">marker_layer</span><span class="p">(</span><span class="n">full_house</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="n">marker</span><span class="p">)</span>
-<span class="n">fig</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt"></div>
-<div id="985c0ddd-593d-4f14-9255-b30597452cf1"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#985c0ddd-593d-4f14-9255-b30597452cf1');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "819a613cd5bb4bb1b1a188d8f486a8f6", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img alt="image" src="../../images/working-with-google-maps-api/map.png"/></p>
 </div>
 </div>
 </div>
