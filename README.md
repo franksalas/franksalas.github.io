@@ -11,7 +11,7 @@ conda env create -f environment.yml
 activate enviroment
 
 ```bash
-conda activate pelicanblog
+conda activate blog
 ```
 
 #### dependencies
@@ -20,6 +20,21 @@ need graphviz
 ```bash
 sudo apt-get install graphviz
 ```
+
+## activate/deactivate 
+
+```bash
+
+make devserver
+
+make stopserver
+```
+## start fresh
+
+```bash
+make clean
+```
+
 
 
 
@@ -52,6 +67,24 @@ Status: published
 
 {% notebook notebooks/my-notebook-post/my-notebook-post.ipynb %}
 ```
+## workon notebook
+
+```python
+
+jupyter notebook
+```
+then navigate to
+
+```bash
+content/
+    notebooks/
+        my-notebook-post/
+        my-notebook-post.ipynb
+```
+
+
+
+
 
 ### create a blog post
 - `python blog_post.py "blog post name"`
@@ -66,7 +99,7 @@ content/articles/this-is-a-test.md      CREATED
 
 ```
 
-markdown file 
+### markdown file 
 
 ```md
 Title: this is a test 
@@ -77,6 +110,6 @@ Status: published
     
 
 
-
 {% img rounded mx-auto d-block /images/this-is-a-test/ image desc %}
 ```
+
